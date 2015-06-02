@@ -1,26 +1,27 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'start', '--production' ]
-2 info using npm@1.4.3
-3 info using node@v0.10.26
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart ghost@0.5.3
-6 info start ghost@0.5.3
-7 verbose unsafe-perm in lifecycle true
-8 info ghost@0.5.3 Failed to exec start script
-9 error ghost@0.5.3 start: `node index`
-9 error Exit status 255
-10 error Failed at the ghost@0.5.3 start script.
-10 error This is most likely a problem with the ghost package,
-10 error not with npm itself.
-10 error Tell the author that this fails on your system:
-10 error     node index
-10 error You can get their info via:
-10 error     npm owner ls ghost
-10 error There is likely additional logging output above.
-11 error System Darwin 14.0.0
-12 error command "node" "/usr/local/bin/npm" "start" "--production"
-13 error cwd /Applications/XAMPP/xamppfiles/htdocs/Portfolio/blog
-14 error node -v v0.10.26
-15 error npm -v 1.4.3
-16 error code ELIFECYCLE
-17 verbose exit [ 1, true ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'stop',
+1 verbose cli   '--production' ]
+2 info using npm@2.9.1
+3 info using node@v0.12.3
+4 verbose stack Error: missing script: stop
+4 verbose stack     at run (/usr/local/lib/node_modules/npm/lib/run-script.js:142:19)
+4 verbose stack     at /usr/local/lib/node_modules/npm/lib/run-script.js:58:5
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:345:5
+4 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
+4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
+4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:232:12
+4 verbose stack     at evalmachine.<anonymous>:334:14
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
+4 verbose stack     at FSReqWrap.oncomplete (evalmachine.<anonymous>:95:15)
+5 verbose cwd /var/www/ghost
+6 error Linux 3.13.0-52-generic
+7 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "stop" "--production"
+8 error node v0.12.3
+9 error npm  v2.9.1
+10 error missing script: stop
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
